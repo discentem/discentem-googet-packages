@@ -1,0 +1,26 @@
+{{$version := "1.10.2383@0" -}}
+{
+  "name": "windowsterminal",
+  "version": "{{$version}}",
+  "arch": "x86_64",
+  "authors": "discentem",
+  "license": "",
+  "description": "Googet package for Windows Terminal",
+  "files": {
+    "Microsoft.WindowsTerminal_1.10.2383.0_8wekyb3d8bbwe.msixbundle": "<temp>/windowsterminal.msixbundle"
+  },
+  "install": {
+    "path": "install.ps1"
+  },
+  "uninstall": {
+    "path": "uninstall.ps1"
+  },
+  "releaseNotes": [],
+  "sources": [{
+      "include": [
+        "Microsoft.WindowsTerminal_1.10.2383.0_8wekyb3d8bbwe.msixbundle",
+        "install.ps1",
+        "uninstall.ps1"
+      ]
+  }]
+}
